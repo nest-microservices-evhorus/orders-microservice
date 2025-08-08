@@ -11,4 +11,5 @@
 3. Crear un archivo `.env` basado en el `.env.template`
 4. Levantar base de datos con `docker-compose up -d`
 5. Ejecutar migraciones de prisma `npx prisma migrate dev`
-6. Levantar proyecto con `npm run start:dev`
+6. Levantar el servicio de Nats `docker run -d --name nats-server -p 4222:4222 -p 6222:6222 -p 8222:8222 nats`
+7. Levantar proyecto con `npm run start:dev`
